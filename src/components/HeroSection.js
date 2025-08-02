@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image Container */}
       <div className="absolute inset-0">
         <Image
-          src="/images/Hero.jpg"
+          src="/images/Hero1.jpg"
           alt="Child development therapy at GrowthWayz"
           fill
           priority

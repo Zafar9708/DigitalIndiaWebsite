@@ -59,13 +59,14 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <Link href="/" className="relative w-80 h-52">
+                    <Link href="/" className="relative  w-80 h-52 md:mb-10 sm:mb-0 sm:mt-1 sm:w-72 ">
                         <Image
-                            src="/grwothwayzlogo.png"
+                            src="/GWlogo.png"
                             alt="GrowthWayz Logo"
                             fill
                             className="object-contain"
                             priority
+                            
                         />
                     </Link>
 
@@ -154,7 +155,7 @@ export default function Navbar() {
                         ))}
 
                         {/* Mobile Buttons */}
-                        <div className="p-4 space-y-2">
+                        {/* <div className="p-4 space-y-2">
                             <a
                                 href="tel:+919876543210"
                                 className="flex items-center justify-center gap-2 bg-[#0F416D] text-white py-2 rounded-full"
@@ -172,7 +173,7 @@ export default function Navbar() {
                             <button className="w-full bg-[#0F416D] text-white py-2 rounded-full">
                                 Book Appointment
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 )}
             </div>
