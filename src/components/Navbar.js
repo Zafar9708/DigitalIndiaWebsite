@@ -59,9 +59,9 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <Link href="/" className="relative  w-80 h-52 md:mb-10 sm:mb-0 sm:mt-1 sm:w-72 ">
+                    <Link href="/" className="relative  w-80 h-52 md:mb-10 sm:mb-0 sm:mt-1 sm:w-48-h-32 ">
                         <Image
-                            src="/GWlogo.png"
+                            src="/gwlogo1.png"
                             alt="GrowthWayz Logo"
                             fill
                             className="object-contain"

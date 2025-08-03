@@ -185,7 +185,7 @@ const ContactUs = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#0F416D' }}>Phone</h3>
                     <p className="mb-1" style={{ color: '#0F416D' }}>Main: <a href="tel:+18005551234" className="hover:underline">+91 9599086567</a></p>
-                    <p style={{ color: '#0F416D' }}>Fax: (800) 555-5678</p>
+                    {/* <p style={{ color: '#0F416D' }}>Fax: (800) 555-5678</p> */}
                     <button className="mt-3 px-4 py-2 rounded-lg font-medium" style={{ backgroundColor: 'rgba(15,65,109,0.1)', color: '#0F416D' }}>
                       Call Now
                     </button>
@@ -201,8 +201,8 @@ const ContactUs = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#0F416D' }}>Email</h3>
-                    <p className="mb-1" style={{ color: '#0F416D' }}><a href="mailto:growthwayzcenter@gmail.com" className="hover:underline">growthwayzcenter@gmail.com</a></p>
-                    <p style={{ color: '#0F416D' }}><a href="mailto:support@growthwayz.com" className="hover:underline">support@growthwayz.com</a></p>
+                    <p className="mb-1" style={{ color: '#0F416D' }}><a href="mailto:growthwayzcenter@gmail.com" className="hover:underline">contact@GrowthWayz.com</a></p>
+                    <p style={{ color: '#0F416D' }}><a href="mailto:support@growthwayz.com" className="hover:underline">contact@growthwayz.com</a></p>
                   </div>
                 </div>
 

@@ -11,7 +11,7 @@ export default function Header() {
         </a>
         <a href="mailto:contact@growthwayz.in" className="flex items-center gap-2 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium">
           <Mail className="w-4 h-4" />
-          <span>growthwayzcenter@gmail.com</span>
+          <span>contact@growthwayz.com</span>
         </a>
         <button className="bg-primary text-white px-10 py-2 rounded-full text-sm font-medium">
           Book Appointment

@@ -52,7 +52,7 @@ export default function ContactUs() {
                   <div>
                     <h4 className="font-bold text-gray-800">Email Address</h4>
                     <a href="mailto:growthwayzcenter@gmail.com" className="text-gray-600 hover:text-primary transition mt-1 block">
-                      growthwayzcenter@gmail.com
+                      contact@growthwayz.com
                     </a>
                   </div>
                 </div>

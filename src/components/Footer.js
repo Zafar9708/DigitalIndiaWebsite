@@ -53,11 +53,11 @@ export default function Footer() {
           <h3 className="text-xl font-bold text-primary mb-4" style={{ color: '#FFFFFF' }}>CONTACT US</h3>
           <div className="flex items-center gap-2 mb-2">
             <FaWhatsapp className="text-primary" />
-            <span>Phone: +91 63881 03445</span>
+            <span>Phone: +91 9599086567</span>
           </div>
           <div className="flex items-center gap-2 mb-4">
             <FaEnvelope className="text-primary" />
-            <span>Email: growthwayz@gmail.com</span>
+            <span>Email: contact@growthwayz.com</span>
           </div>
           <h4 className="text-base font-semibold mb-2">FOLLOW US</h4>
           <div className="flex gap-4 text-lg">
