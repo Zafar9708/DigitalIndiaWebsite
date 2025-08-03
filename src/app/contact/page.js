@@ -202,7 +202,7 @@ const ContactUs = () => {
                   <div>
                     <h3 className="text-xl font-bold mb-2" style={{ color: '#0F416D' }}>Email</h3>
                     <p className="mb-1" style={{ color: '#0F416D' }}><a href="mailto:growthwayzcenter@gmail.com" className="hover:underline">contact@GrowthWayz.com</a></p>
-                    <p style={{ color: '#0F416D' }}><a href="mailto:support@growthwayz.com" className="hover:underline">contact@growthwayz.com</a></p>
+                    {/* <p style={{ color: '#0F416D' }}><a href="mailto:support@growthwayz.com" className="hover:underline">contact@growthwayz.com</a></p> */}
                   </div>
                 </div>
 
