@@ -1,221 +1,106 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 
-const reasons = [
-  {
-    title: 'Expert Certified Team',
-    description: 'CPA-certified professionals with 15+ years of diverse industry experience',
-    icon: '👨‍💼',
-    stat: '15+ Years',
-    color: 'from-blue-500 to-cyan-500'
-  },
-  {
-    title: 'Client Satisfaction',
-    description: 'Join 250+ businesses that trust us with their financial success',
-    icon: '⭐',
-    stat: '98% Rating',
-    color: 'from-purple-500 to-pink-500'
-  },
-  {
-    title: 'Cutting-Edge Technology',
-    description: 'AI-powered tools and cloud-based solutions for modern accounting',
-    icon: '💻',
-    stat: 'AI Powered',
-    color: 'from-green-500 to-emerald-500'
-  },
-  {
-    title: '24/7 Support',
-    description: 'Round-the-clock assistance for all your accounting needs',
-    icon: '🔄',
-    stat: 'Always Available',
-    color: 'from-orange-500 to-red-500'
-  }
-];
-
-export default function WhyChooseUs() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % reasons.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+const WhyChooseUs = () => {
+  const features = [
+    {
+      title: "Expert Technicians",
+      description: "Our certified technicians have years of experience and stay updated with the latest technology trends.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      )
+    },
+    {
+      title: "Quick Turnaround",
+      description: "We understand your urgency. Most repairs are completed within 24-48 hours with our efficient service.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      )
+    },
+    {
+      title: "Quality Parts",
+      description: "We use only high-quality, genuine parts to ensure longevity and optimal performance of your devices.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 01-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+        </svg>
+      )
+    },
+    {
+      title: "Affordable Pricing",
+      description: "Quality service doesn't have to be expensive. We offer competitive pricing with no hidden costs.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      )
+    },
+    {
+      title: "Warranty Included",
+      description: "All our repairs come with a warranty, giving you peace of mind and confidence in our work.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      )
+    },
+    {
+      title: "On-Site Support",
+      description: "For businesses, we offer on-site support to minimize downtime and keep your operations running smoothly.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+      )
+    }
+  ];
 
   return (
-    <div className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gray-900 overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      
-      {/* Floating particles */}
-      <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-cyan-500/30 rounded-full animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${i * 0.5}s`,
-              animationDuration: `${15 + Math.random() * 10}s`
-            }}
-          ></div>
-        ))}
-      </div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* Header Section */}
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-md rounded-full mb-8 border border-white/10">
-            <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 animate-pulse"></div>
-            <span className="text-cyan-400 font-semibold text-sm uppercase tracking-wider">WHY CHOOSE ATLABB</span>
-          </div>
-          
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Excellence
-            </span>{' '}
-            in Accounting
-          </h2>
-          
-          <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Discover why businesses choose Atlabb for their financial success and peace of mind
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Digital India Tech Solutions?</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            We are committed to providing exceptional service with a focus on quality, reliability, and customer satisfaction.
           </p>
         </div>
-
-        {/* Features Grid - Holographic Style */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {reasons.map((reason, index) => (
-            <div
-              key={index}
-              className="relative group cursor-pointer"
-              onClick={() => setActiveIndex(index)}
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {features.map((feature, index) => (
+            <div key={index} className="text-center group">
+              <div className="inline-flex items-center justify-center w-24 h-24 bg-blue-50 rounded-2xl mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
+              <p className="text-gray-600">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+        
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-white text-center">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Get Your Device Fixed?</h3>
+          <p className="text-xl mb-8 max-w-3xl mx-auto">Contact us today for a free diagnostic and quote on our services.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a 
+              href="tel:+919876543210" 
+              className="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-blue-500/30"
             >
-              {/* Holographic card */}
-              <div className={`relative h-80 bg-gradient-to-br ${reason.color} rounded-3xl overflow-hidden transform transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl ${
-                activeIndex === index ? 'ring-4 ring-white/50 scale-105' : ''
-              }`}>
-                
-                {/* Holographic effect */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                
-                {/* Content */}
-                <div className="relative p-8 h-full flex flex-col justify-center items-center text-center text-white">
-                  <div className="text-5xl mb-6">{reason.icon}</div>
-                  <h3 className="text-2xl font-bold mb-4">{reason.title}</h3>
-                  <p className="text-white/80 leading-relaxed">{reason.description}</p>
-                  
-                  {/* Stat badge */}
-                  <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full">
-                    <span className="text-sm font-semibold text-white">{reason.stat}</span>
-                  </div>
-                </div>
-
-                {/* Hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </div>
-
-              {/* Glow effect */}
-              <div className={`absolute -inset-4 bg-gradient-to-r ${reason.color} rounded-3xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10 ${
-                activeIndex === index ? 'opacity-30' : ''
-              }`}></div>
-            </div>
-          ))}
-        </div>
-
-        {/* Comparison Section */}
-        <div className="bg-gray-800/50 backdrop-blur-md rounded-3xl p-12 border border-white/10 mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-white mb-4">The Atlabb Advantage</h3>
-            <p className="text-gray-300">Why we stand out from traditional accounting firms</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div >
-              <h4 className="text-2xl font-bold text-red-400 mb-6 ml-16">Traditional Accounting</h4>
-              <div className="space-y-4 ml-16">
-                {['Manual processes', 'Reactive approach', 'Generic solutions', 'Limited technology', 'Seasonal support'].map((item, index) => (
-                  <div key={index} className="flex items-center text-gray-400">
-                    <div className="w-2 h-2 bg-red-400 rounded-full mr-4"></div>
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-2xl font-bold text-green-400 mb-6 ml-24">Atlabb Accounting</h4>
-              <div className="space-y-4 ml-24">
-                {['AI-powered automation', 'Proactive strategy', 'Customized solutions', 'Cutting-edge technology', '24/7 continuous support'].map((item, index) => (
-                  <div key={index} className="flex items-center text-gray-400">
-                    <div className="w-2 h-2 bg-green-400 rounded-full mr-4"></div>
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+              Call Now: +91 98765 43210
+            </a>
+            <a 
+              href="/contact" 
+              className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all duration-300"
+            >
+              Schedule Appointment
+            </a>
           </div>
         </div>
-
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-          {[
-            { number: '15+', label: 'Years Experience', color: 'from-blue-500 to-cyan-500' },
-            { number: '250+', label: 'Happy Clients', color: 'from-purple-500 to-pink-500' },
-            { number: '98%', label: 'Satisfaction Rate', color: 'from-green-500 to-emerald-500' },
-            { number: '24/7', label: 'Support Available', color: 'from-orange-500 to-red-500' }
-          ].map((stat, index) => (
-            <div key={index} className="relative group">
-              <div className={`bg-gradient-to-br ${stat.color} rounded-2xl p-8 text-center backdrop-blur-md border border-white/10 transform transition-all duration-500 group-hover:scale-105`}>
-                <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
-                <div className="text-gray-200">{stat.label}</div>
-              </div>
-              
-              {/* Glow effect */}
-              <div className={`absolute -inset-2 bg-gradient-to-br ${stat.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10`}></div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA Section */}
-        {/* <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-3xl p-12 border border-white/10 backdrop-blur-sm">
-            <h3 className="text-3xl font-bold text-white mb-6">Ready to Experience the Difference?</h3>
-            <p className="text-xl text-white/70 mb-10 max-w-2xl mx-auto">
-              Join hundreds of successful businesses that trust Atlabb Accounting
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link href="/contact">
-                <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-10 py-4 rounded-xl font-semibold hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-1">
-                  Get Started Today
-                </button>
-              </Link>
-              <Link href="/about">
-                <button className="border-2 border-white/20 text-white px-10 py-4 rounded-xl font-semibold hover:border-white/40 transition-all duration-300 backdrop-blur-sm">
-                  Learn Our Story
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div> */}
       </div>
-
-      {/* Global styles for animations */}
-      <style jsx>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(5deg); }
-        }
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-      `}</style>
-    </div>
+    </section>
   );
-}
+};
+
+export default WhyChooseUs;

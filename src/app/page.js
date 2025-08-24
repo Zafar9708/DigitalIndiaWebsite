@@ -41,6 +41,9 @@ import TestimonialsSection from "components/Testimonials";
 import WelcomeSection from "components/WelcomeSection";
 import WhyChooseUs from "components/WhyChooseUs";
 import FullWidthSection from "components/FullWidthSection";
+import ServicesOverview from "components/ServicesOverview";
+import ContactCTA from "components/ContactCTA";
+import ServiceProcess from "components/ServiceProcess";
 
 export default function Home() {
   return (
@@ -49,40 +52,49 @@ export default function Home() {
         <HeroSection />
       </FullWidthSection>
       
-      <FullWidthSection>
+      {/* <FullWidthSection>
         <WelcomeSection />
-      </FullWidthSection>
+      </FullWidthSection> */}
       
       <FullWidthSection>
-        <ServicesSection />
+        {/* <ServicesSection /> */}
+        <ServicesOverview />
       </FullWidthSection>
       
-      <FullWidthSection>
+      {/* <FullWidthSection>
         <ServicesWeProvide />
-      </FullWidthSection>
+      </FullWidthSection> */}
       
       <FullWidthSection>
         <WhyChooseUs />
       </FullWidthSection>
       
-      <FullWidthSection>
+      {/* <FullWidthSection>
         <ProcessSection />
-      </FullWidthSection>
+      </FullWidthSection> */}
       
-      <FullWidthSection>
+      {/* <FullWidthSection>
         <TechnologySection />
-      </FullWidthSection>
-      
+      </FullWidthSection> */}
+{/*       
       <FullWidthSection>
         <FinancialInsightsSection />
+      </FullWidthSection> */}
+
+        <FullWidthSection>
+        <ServiceProcess />
       </FullWidthSection>
       
       <FullWidthSection>
         <TestimonialsSection />
       </FullWidthSection>
       
-      <FullWidthSection>
+      {/* <FullWidthSection>
         <ContactUs />
+      </FullWidthSection> */}
+
+       <FullWidthSection>
+        <ContactCTA />
       </FullWidthSection>
     </div>
   );
