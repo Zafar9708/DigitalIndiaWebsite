@@ -48,8 +48,7 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Call Us</h3>
-                  <p className="text-blue-200">+91 98765 43210</p>
-                  <p className="text-blue-200">+91 01234 56789</p>
+                  <p className="text-blue-200">+91 99904473018</p>
                 </div>
               </div>
               
