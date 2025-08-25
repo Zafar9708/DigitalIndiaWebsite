@@ -14,7 +14,7 @@ const MobileRepair = () => {
       time: "30-60 minutes",
       cost: "₹1,500 - ₹8,000",
       common: true,
-      image: "/api/placeholder/300/200?text=Screen+Repair"
+      image: "https://media.istockphoto.com/id/1390988889/photo/close-up-shot-of-technician-removing-or-fixing-broken-mobile-phone-display-at-workshop.jpg?s=612x612&w=0&k=20&c=OW5l-AE4y-4D8PnML0w0LdbYMT0hlAoqRBK8sOrFKnY="
     },
     {
       issue: "Battery Replacement",
@@ -23,7 +23,7 @@ const MobileRepair = () => {
       time: "45 minutes",
       cost: "₹1,200 - ₹4,000",
       common: true,
-      image: "/api/placeholder/300/200?text=Battery+Replacement"
+      image: "https://mljjxqhpratf.i.optimole.com/w:800/h:800/q:100/f:best/https://www.mobile-experts.com.au/wp-content/uploads/2020/11/phone-battery-replacement.jpg"
     },
     {
       issue: "Charging Port Repair",
@@ -32,7 +32,7 @@ const MobileRepair = () => {
       time: "1-2 hours",
       cost: "₹800 - ₹2,500",
       common: false,
-      image: "/api/placeholder/300/200?text=Charging+Port"
+      image: "https://cdn-bjcni.nitrocdn.com/iVNCPdDQeamUVPLwrUUCDenAdntewMKT/assets/images/optimized/rev-288d08a/www.gophermods.com/wp-content/uploads/2023/07/iPhone-Charging-Port-Repair-Options-Costs-and-Considerations.jpg"
     },
     {
       issue: "Camera Repair",
@@ -41,7 +41,7 @@ const MobileRepair = () => {
       time: "1 hour",
       cost: "₹1,000 - ₹5,000",
       common: false,
-      image: "/api/placeholder/300/200?text=Camera+Repair"
+      image: "https://img.freepik.com/premium-photo/mobile-camera-repair-mobile-phone-smartphone-repair-technici_35534-814.jpg"
     },
     {
       issue: "Water Damage Repair",
@@ -50,7 +50,7 @@ const MobileRepair = () => {
       time: "2-4 hours",
       cost: "₹2,000 - ₹6,000",
       common: true,
-      image: "/api/placeholder/300/200?text=Water+Damage"
+      image: "https://www.iphonerepairleeds.com/products/s5-water-damage-mobile.jpg"
     },
     {
       issue: "Software Issues",
@@ -59,7 +59,7 @@ const MobileRepair = () => {
       time: "30-60 minutes",
       cost: "₹500 - ₹1,500",
       common: true,
-      image: "/api/placeholder/300/200?text=Software+Repair"
+      image: "https://www.openrma.com/wp-content/uploads/2019/11/Mobile-Repair-Shop1.jpg"
     }
   ];
 

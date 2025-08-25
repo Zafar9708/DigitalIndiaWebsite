@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
           <p className="text-xl mb-8 max-w-3xl mx-auto">Contact us today for a free diagnostic and quote on our services.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="tel:+919876543210" 
+              href="tel:+919990473018" 
               className="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-blue-500/30"
             >
               Call Now: +91 98765 43210

@@ -60,8 +60,8 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Email Us</h3>
-                  <p className="text-blue-200">info@digitalindiatech.com</p>
-                  <p className="text-blue-200">support@digitalindiatech.com</p>
+                  <p className="text-blue-200">sabbasii3018@gmail.com</p>
+                
                 </div>
               </div>
               
@@ -74,8 +74,8 @@ const ContactCTA = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">Visit Us</h3>
-                  <p className="text-blue-200">123 Tech Park, Innovation Road</p>
-                  <p className="text-blue-200">Bengaluru, Karnataka - 560001</p>
+                  <p className="text-blue-200">Shop no : 159 ,Village : Hawal </p>
+                  <p className="text-blue-200">Uttar Pradesh , 245304 , India</p>
                 </div>
               </div>
             </div>

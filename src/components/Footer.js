@@ -115,8 +115,8 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span className="text-gray-950">
-                  Pilkhua, Innovation Road<br />
-                  Ghaziabd, Uttar Pradesh - 245304
+                  Shop no : 159, Village : Hawal<br />
+                   Uttar Pradesh - 245304, India
                 </span>
               </li>
               <li className="flex items-start">
@@ -133,8 +133,8 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <span className="text-gray-950">
-                  info@digitalindiatech.com<br />
-                  support@digitalindiatech.com
+                  sabbasii3018@gmail.com<br />
+                 
                 </span>
               </li>
             </ul>
@@ -147,7 +147,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-950 text-sm">
-              © {currentYear} Digital India Tech Solutions. All rights reserved.
+              © {currentYear} Digital India Computer. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link href="/privacy-policy" className="text-gray-950 hover:text-blue-400 text-sm transition-colors">

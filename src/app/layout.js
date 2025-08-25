@@ -60,7 +60,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'Digital India Tech - Professional Tech Solutions',
+  title: 'Digital India Computer - Professional Tech Solutions',
   description: 'Atlabb Accounting provides comprehensive financial services including bookkeeping, tax preparation, financial consulting, and strategic business advisory.',
   keywords: 'Atlabb, accounting services, bookkeeping, tax preparation, financial consulting, business advisory',
   robots: 'index, follow',

@@ -369,7 +369,7 @@ const Navbar = () => {
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <span className="block text-xs text-blue-300 font-medium">Tech Solutions</span>
+                  <span className="block text-xs text-blue-300 font-medium">Digital India Solutions</span>
                 </div>
               </div>
             </Link>
